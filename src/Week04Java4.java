@@ -14,6 +14,14 @@ public class Week04Java4 {
 		int[] ages2 = {1, 2, 3, 4, 5, 6, 7, 8, 9}; 
 
 //i. Make sure that there are 9 elements of type int in this new array.  
+		int lengthOfAges2 = ages2.length;
+		if(lengthOfAges2 == 9) {
+			System.out.println("#1i: There are 9 elements in this array.");
+		}else if(lengthOfAges2 > 9) {
+			System.out.println("#1i: There are too many elements. Please remove " + (lengthOfAges2-9));
+		}else if(lengthOfAges2 < 9) {
+			System.out.println("#1i: There are not eneough elements. Please add " + (9-lengthOfAges2));
+		}System.out.println("------------------------------------");
 
 //ii. Repeat the subtraction from Step 1.a. (Programmatically subtract the value of the first element in the new array ages2 from the last element of ages2). 
 		int subtraction2 = ages2[ages2.length-1]-ages[2];
